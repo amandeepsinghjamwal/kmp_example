@@ -16,9 +16,6 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.FloatingActionButtonDefaults
 import androidx.compose.material3.Icon
-import androidx.compose.material3.LargeTopAppBar
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.MediumTopAppBar
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -41,15 +38,15 @@ fun MainScreen() {
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(
-                modifier = Modifier.padding(end = 10.dp, bottom = 15.dp),
-                elevation = FloatingActionButtonDefaults.elevation(20.dp),
-                containerColor = Color(0xFF252525),
+                modifier = Modifier.padding(end = 10.dp, bottom = 15.dp).size(60.dp),
+                elevation = FloatingActionButtonDefaults.elevation(15.dp),
+                containerColor = Color(0xFF202020),
                 content = {
-
                     Icon(
                         imageVector = Icons.Default.Add,
                         contentDescription = null,
-                        tint = Color.White
+                        tint = Color.White,
+                        modifier = Modifier.size(40.dp)
                     )
                 },
                 shape = CircleShape,
